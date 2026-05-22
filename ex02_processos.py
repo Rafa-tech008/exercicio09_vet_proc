@@ -63,7 +63,7 @@ def proc_filhos ():
         proc = 'TASKLIST /FO TABLE'
         vet_proc = proc.split (' ')
         saida = subprocess.Popen (vet_proc,stdout = subprocess.PIPE)
-        linha = saida.stdout.readline().decode ('utf-8', errors = 'ignore')
+        linha = saida.stdout.readline().decode ('cp850', errors = 'ignore')
         while (linha != ''):
             print (linha)
             linha = saida.stdout.readline().decode ('cp850', errors = 'ignore')
