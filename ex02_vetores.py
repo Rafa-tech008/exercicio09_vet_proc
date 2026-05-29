@@ -15,8 +15,8 @@ def func_media (vetor):
 
 
 def func_tamanho (vetor):
-    maior = vetor [0]
-    menor = vetor [0]
+    maior: int = 0
+    menor: int = 0
     for i in vetor:
         if (maior < i):
             maior = i
